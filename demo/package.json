@@ -1,0 +1,17 @@
+{
+  "name": "ponder-demo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "ponder dev",
+    "start": "ponder start",
+    "codegen": "ponder codegen"
+  },
+  "dependencies": {
+    "ponder": "workspace:*",
+    "viem": "2.30.1"
+  },
+  "devDependencies": {
+    "typescript": "5.0.4"
+  }
+}

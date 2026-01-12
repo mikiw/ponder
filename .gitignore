@@ -7,3 +7,11 @@ tmp
 
 # IDE
 .idea
+.vscode/
+
+# Ponder
+.ponder/
+.env.local
+.env
+dist/
+generated/
