@@ -1,6 +1,6 @@
 import { createConfig } from "ponder";
 import { http } from "viem";
-import { erc20ABI } from "./abis/erc20ABI";
+import { fairLaunchFactoryV2Abi } from "./abis/fairLaunchFactoryV2Abi";
 
 export default createConfig({
   chains: {
@@ -10,9 +10,9 @@ export default createConfig({
     },
   },
   contracts: {
-    BaseContract: {
+    FairLaunchFactoryV2: {
       chain: "base",
-      abi: erc20ABI,
+      abi: fairLaunchFactoryV2Abi,
       address: "0x3B9dFa40bea19f24f97d0c20fB85ea15bBE12330",
       startBlock: 34364302,
     },

@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "dev": "ponder dev",
-    "start": "ponder start",
+    "start": "ponder start --schema public",
+    "serve": "ponder serve --schema public",
     "codegen": "ponder codegen"
   },
   "dependencies": {

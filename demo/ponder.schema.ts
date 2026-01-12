@@ -1,9 +1,10 @@
 import { onchainTable } from "ponder";
 
-export const transferEvent = onchainTable("transfer_event", (t) => ({
+export const tokenLaunchedEvent = onchainTable("token_launched_event", (t) => ({
   id: t.text().primaryKey(),
-  from: t.hex().notNull(),
-  to: t.hex().notNull(),
-  amount: t.bigint().notNull(),
+  token: t.hex().notNull(),
+  creator: t.hex().notNull(),
+  poolId: t.hex().notNull(),
+  tokenId: t.bigint().notNull(),
   timestamp: t.integer().notNull(),
 }));
