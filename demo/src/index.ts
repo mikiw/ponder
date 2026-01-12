@@ -3,7 +3,7 @@ import { tokenLaunchedEvent } from "ponder:schema";
 
 ponder.on("FairLaunchFactoryV2:TokenLaunched", async ({ event, context }) => {
   await context.db.insert(tokenLaunchedEvent).values({
-    id: event.log.id,
+    id: `${event.transaction.hash}-${event.log.logIndex}`,
     token: event.args.token,
     creator: event.args.creator,
     poolId: event.args.poolId,
